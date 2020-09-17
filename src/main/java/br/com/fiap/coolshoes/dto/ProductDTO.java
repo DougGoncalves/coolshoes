@@ -1,55 +1,64 @@
 package br.com.fiap.coolshoes.dto;
 
+import br.com.fiap.coolshoes.entity.Product;
+
 import java.math.BigDecimal;
 
 public class ProductDTO {
-  
+
     private Long id;
     private String modelo;
     private Integer numero;
     private String cor;
     private BigDecimal preco;
 
+    public ProductDTO(){}
 
-  public Long getId() {
-    return this.id;
-  }
+    public ProductDTO(Product product) {
+        this.id = product.getId();
+        this.modelo = product.getModelo();
+        this.numero = product.getNumero();
+        this.cor = product.getCor();
+        this.preco = product.getPreco();
+    }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public String getModelo() {
-    return this.modelo;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public void setModelo(String modelo) {
-    this.modelo = modelo;
-  }
+    public String getModelo() {
+        return modelo;
+    }
 
-  public Integer getNumero() {
-    return this.numero;
-  }
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
-  public void setNumero(Integer numero) {
-    this.numero = numero;
-  }
+    public Integer getNumero() {
+        return numero;
+    }
 
-  public String getCor() {
-    return this.cor;
-  }
+    public void setNumero(Integer numero) {
+        this.numero = numero;
+    }
 
-  public void setCor(String cor) {
-    this.cor = cor;
-  }
+    public String getCor() {
+        return cor;
+    }
 
-  public BigDecimal getPreco() {
-    return this.preco;
-  }
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
 
-  public void setPreco(BigDecimal preco) {
-    this.preco = preco;
-  }
+    public BigDecimal getPreco() {
+        return preco;
+    }
 
-    
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
+    }
 }
