@@ -2,11 +2,11 @@ server:
   port: 8088
 
 fiap:
-  debug: false
+  debug: true
 
 jwt:
   secret: fiapSecr3t
-  expire: 5
+  expiration: 5
 
 springfox:
   documentation:
@@ -20,8 +20,8 @@ spring:
     password: fiap
   jpa:
     show-sql: true
-  # security:
-  #   user:
-  #     name: douglas
-  #     password: senha
-  #     roles: ADMIN  
+#  security:
+#    user:
+#      name: fabio
+#      password: senha
+#      roles: ADMIN

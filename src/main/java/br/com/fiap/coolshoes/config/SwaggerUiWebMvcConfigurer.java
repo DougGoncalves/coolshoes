@@ -1,5 +1,6 @@
 package br.com.fiap.coolshoes.config;
 
+
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
