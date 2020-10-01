@@ -4,14 +4,14 @@ import java.math.BigDecimal;
 
 public class ProductPriceUpdateDTO {
 
-  private BigDecimal preco;
+    private BigDecimal preco;
 
-  public BigDecimal getPreco() {
-    return this.preco;
-  }
+    public BigDecimal getPreco() {
+        return preco;
+    }
 
-  public void setPreco(BigDecimal preco) {
-    this.preco = preco;
-  }
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
+    }
 
 }

@@ -1,6 +1,5 @@
 package br.com.fiap.coolshoes.controller;
 
-
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;

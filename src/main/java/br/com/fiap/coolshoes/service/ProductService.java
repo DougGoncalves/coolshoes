@@ -1,10 +1,10 @@
 package br.com.fiap.coolshoes.service;
 
-import java.util.List;
-
 import br.com.fiap.coolshoes.dto.ProductCreateUpdateDTO;
 import br.com.fiap.coolshoes.dto.ProductDTO;
 import br.com.fiap.coolshoes.dto.ProductPriceUpdateDTO;
+
+import java.util.List;
 
 public interface ProductService {
 

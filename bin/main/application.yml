@@ -4,6 +4,10 @@ server:
 fiap:
   debug: false
 
+jwt:
+  secret: fiapSecr3t
+  expire: 5
+
 springfox:
   documentation:
     swagger-ui:
@@ -16,3 +20,8 @@ spring:
     password: fiap
   jpa:
     show-sql: true
+  # security:
+  #   user:
+  #     name: douglas
+  #     password: senha
+  #     roles: ADMIN  
